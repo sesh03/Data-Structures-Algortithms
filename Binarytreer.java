@@ -50,7 +50,9 @@ class Traversal {
   t1.root.left.rght= new Node ('E');
   
   t1.preordertraversal(t1.root);
+  System.out.println();
   t1.postordertraversal(t1.root);
+  System.out.println();
   t1.inordertraversal (t1.root);
    
    
