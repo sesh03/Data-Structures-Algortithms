@@ -23,6 +23,21 @@ class TreeTraversal {
      preordertraversal (n.right);
 }
 }
+ 
+ void postordertraversal( Node n){
+  if ( n!=null){
+   postordertraversal(n.left);
+   postordertraversal(n.right);
+   System.out.print(n.key+" ");
+}
+ }
+ void inordertraversal( Node n){
+  if ( n!=null){
+   postordertraversal(n.left);
+   System.out.print(n.key+" ");
+   postordertraversal(n.right);
+  }
+ }
 }
 
 class Traversal {
@@ -35,4 +50,8 @@ class Traversal {
   t1.root.left.rght= new Node ('E');
   
   t1.preordertraversal(t1.root);
+  t1.postordertraversal(t1.root);
+  t1.inordertraversal (t1.root);
+   
+   
   } 
